@@ -35,8 +35,8 @@
   --space-3xl: 96px;
 
   /* Typography */
-  --font-heading: 'Nunito', 'Arial', sans-serif;
-  --font-body: 'Nunito', 'Arial', sans-serif;
+  --font-heading: 'MotoGP Display', 'Arial', sans-serif;
+  --font-body: 'MotoGP Text', 'Arial', sans-serif;
 
   /* Layout */
   --nav-height: 60px;
@@ -55,7 +55,64 @@
   --transition-slow: 0.4s cubic-bezier(.4,0,.2,1);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+/* MotoGP Display — Titres */
+@font-face {
+  font-family: 'MotoGP Display';
+  src: url('fonts/MotoGPDisplay-Bold.woff2') format('woff2'),
+       url('fonts/MotoGPDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* MotoGP Text — Corps de texte */
+@font-face {
+  font-family: 'MotoGP Text';
+  src: url('fonts/MotoGPText-Light.woff2') format('woff2'),
+       url('fonts/MotoGPText-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MotoGP Text';
+  src: url('fonts/MotoGPText-Regular.woff2') format('woff2'),
+       url('fonts/MotoGPText-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MotoGP Text';
+  src: url('fonts/MotoGPText-Italic.woff2') format('woff2'),
+       url('fonts/MotoGPText-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MotoGP Text';
+  src: url('fonts/MotoGPText-Bold.woff2') format('woff2'),
+       url('fonts/MotoGPText-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MotoGP Text';
+  src: url('fonts/MotoGPText-BoldItalic.woff2') format('woff2'),
+       url('fonts/MotoGPText-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Dancing Script — sous-titre hero */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 html, body {
   overflow-x: hidden;
@@ -831,15 +888,42 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
+.footer-info-and-logo {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xl);
+}
+
+.footer-info {
+  flex: 1;
+}
+
+.footer-logo-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
 .footer-logo {
-  width: 70px;
-  margin-top: var(--space-md);
-  opacity: 0.7;
+  width: 140px;
+  opacity: 0.85;
   transition: opacity var(--transition);
 }
 
 .footer-logo:hover {
   opacity: 1;
+}
+
+@media (max-width: 639px) {
+  .footer-info-and-logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 110px;
+    margin-top: var(--space-md);
+  }
 }
 
 .footer-bottom {
