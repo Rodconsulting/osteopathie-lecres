@@ -15,10 +15,53 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.osteopathie-lecres.fr/"},{"@type":"ListItem","position":2,"name":"Troubles Musculo-Squelettiques","item":"https://www.osteopathie-lecres.fr/troubles-musculo-squelettiques.html"}]}
-  </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Comment un ostéopathe traite-t-il le mal de dos à Montpellier ?","acceptedAnswer":{"@type":"Answer","text":"Au Centre d'Ostéopathie du Crès, nous traitons le mal de dos (lombalgie, dorsalgie, cervicalgie) par des techniques structurelles et fonctionnelles. Manipulations articulaires, relâchement musculaire et mobilisations douces permettent de soulager durablement les douleurs de dos."}},{"@type":"Question","name":"Peut-on voir un ostéopathe en urgence pour une sciatique au Crès ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous recevons en urgence les patients souffrant de sciatique aiguë, lumbago ou torticolis. Prenez rendez-vous rapidement via Doctolib ou appelez le 06 22 97 90 70 (Geoffrey Boyaval) ou 07 50 15 07 69 (Marielle Ragache)."}},{"@type":"Question","name":"Quels troubles musculo-squelettiques traite un ostéopathe ?","acceptedAnswer":{"@type":"Answer","text":"Lombalgies, cervicalgies, dorsalgies, sciatiques, torticolis, tendinites, douleurs d'épaule, de hanche, de bassin, épicondylites, blocages articulaires. L'ostéopathie agit sur l'ensemble des TMS, en aigu comme en chronique."}}]}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.osteopathie-lecres.fr/#medicalbusiness",
+        "name": "Centre d'Ostéopathie du Crès",
+        "url": "https://www.osteopathie-lecres.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 Place Charles de Gaulle",
+          "addressLocality": "Le Crès",
+          "postalCode": "34920",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6395,
+          "longitude": 3.9235
+        },
+        "medicalSpecialty": "Osteopathic",
+        "priceRange": "65€",
+        "openingHoursSpecification": [
+          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"}
+        ],
+        "employee": [
+          {"@type": "Person", "name": "Geoffrey Boyaval", "jobTitle": "Ostéopathe D.O."},
+          {"@type": "Person", "name": "Marielle Ragache", "jobTitle": "Ostéopathe D.O."}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Comment un ostéopathe traite-t-il le mal de dos à Montpellier ?", "acceptedAnswer": {"@type": "Answer", "text": "Au Centre d'Ostéopathie du Crès, nous traitons le mal de dos (lombalgie, dorsalgie, cervicalgie) par des techniques structurelles et fonctionnelles. Manipulations articulaires, relâchement musculaire et mobilisations douces permettent de soulager durablement les douleurs de dos."}},
+          {"@type": "Question", "name": "Peut-on voir un ostéopathe en urgence pour une sciatique au Crès ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, nous recevons en urgence les patients souffrant de sciatique aiguë, lumbago ou torticolis. Prenez rendez-vous rapidement via Doctolib ou appelez le 06 22 97 90 70 (Geoffrey Boyaval) ou 07 50 15 07 69 (Marielle Ragache)."}},
+          {"@type": "Question", "name": "Quels troubles musculo-squelettiques traite un ostéopathe ?", "acceptedAnswer": {"@type": "Answer", "text": "Lombalgies, cervicalgies, dorsalgies, sciatiques, torticolis, tendinites, douleurs d'épaule, de hanche, de bassin, épicondylites, blocages articulaires. L'ostéopathie agit sur l'ensemble des TMS, en aigu comme en chronique."}}
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.osteopathie-lecres.fr/"},
+          {"@type": "ListItem", "position": 2, "name": "Troubles Musculo-Squelettiques", "item": "https://www.osteopathie-lecres.fr/troubles-musculo-squelettiques.html"}
+        ]
+      }
+    ]
+  }
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>

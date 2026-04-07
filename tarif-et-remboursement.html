@@ -15,10 +15,60 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.osteopathie-lecres.fr/"},{"@type":"ListItem","position":2,"name":"Tarifs et Remboursement","item":"https://www.osteopathie-lecres.fr/tarif-et-remboursement.html"}]}
-  </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quel est le prix d'une consultation ostéopathe au Crès ?","acceptedAnswer":{"@type":"Answer","text":"Le tarif de consultation chez votre ostéopathe au Crès est de 65€ pour une séance d'environ 45 minutes comprenant bilan complet, traitement sur-mesure et conseils personnalisés."}},{"@type":"Question","name":"L'ostéopathie est-elle remboursée par la mutuelle ?","acceptedAnswer":{"@type":"Answer","text":"L'ostéopathie n'est pas remboursée par la Sécurité sociale, mais la grande majorité des mutuelles prennent en charge tout ou partie des séances. Nous remettons une facture détaillée pour votre remboursement."}},{"@type":"Question","name":"Peut-on consulter un ostéopathe en urgence au Crès et Montpellier ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous recevons les urgences ostéopathiques : lumbago, torticolis aigu, blocage articulaire, sciatique. Contactez-nous par Doctolib ou téléphone pour un rendez-vous rapide au Crès, à proximité de Montpellier, Vendargues, Jacou et Castelnau-le-Lez."}}]}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.osteopathie-lecres.fr/#medicalbusiness",
+        "name": "Centre d'Ostéopathie du Crès",
+        "url": "https://www.osteopathie-lecres.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 Place Charles de Gaulle",
+          "addressLocality": "Le Crès",
+          "postalCode": "34920",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6395,
+          "longitude": 3.9235
+        },
+        "medicalSpecialty": "Osteopathic",
+        "priceRange": "65€",
+        "openingHoursSpecification": [
+          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"}
+        ],
+        "employee": [
+          {"@type": "Person", "name": "Geoffrey Boyaval", "jobTitle": "Ostéopathe D.O."},
+          {"@type": "Person", "name": "Marielle Ragache", "jobTitle": "Ostéopathe D.O."}
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Consultation ostéopathie",
+          "itemListElement": [
+            {"@type": "Offer", "name": "Consultation ostéopathie", "price": "65", "priceCurrency": "EUR"}
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Quel est le prix d'une consultation ostéopathe au Crès ?", "acceptedAnswer": {"@type": "Answer", "text": "Le tarif de consultation chez votre ostéopathe au Crès est de 65€ pour une séance d'environ 45 minutes comprenant bilan complet, traitement sur-mesure et conseils personnalisés."}},
+          {"@type": "Question", "name": "L'ostéopathie est-elle remboursée par la mutuelle ?", "acceptedAnswer": {"@type": "Answer", "text": "L'ostéopathie n'est pas remboursée par la Sécurité sociale, mais la grande majorité des mutuelles prennent en charge tout ou partie des séances. Nous remettons une facture détaillée pour votre remboursement."}},
+          {"@type": "Question", "name": "Peut-on consulter un ostéopathe en urgence au Crès et Montpellier ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, nous recevons les urgences ostéopathiques : lumbago, torticolis aigu, blocage articulaire, sciatique. Contactez-nous par Doctolib ou téléphone pour un rendez-vous rapide au Crès, à proximité de Montpellier, Vendargues, Jacou et Castelnau-le-Lez."}}
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.osteopathie-lecres.fr/"},
+          {"@type": "ListItem", "position": 2, "name": "Tarifs et Remboursements", "item": "https://www.osteopathie-lecres.fr/tarif-et-remboursement.html"}
+        ]
+      }
+    ]
+  }
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>

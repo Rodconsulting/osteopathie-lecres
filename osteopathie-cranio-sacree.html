@@ -15,10 +15,53 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.osteopathie-lecres.fr/"},{"@type":"ListItem","position":2,"name":"Ostéopathie Crânio-Sacrée","item":"https://www.osteopathie-lecres.fr/osteopathie-cranio-sacree.html"}]}
-  </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quand emmener son bébé chez un ostéopathe au Crès ?","acceptedAnswer":{"@type":"Answer","text":"Consultez un ostéopathe pour votre nourrisson dès les premières semaines : après un accouchement difficile (forceps, ventouse, césarienne), en cas de plagiocéphalie (tête plate), coliques, reflux, torticolis congénital ou troubles du sommeil. Les techniques crâniennes sont très douces et adaptées dès la naissance."}},{"@type":"Question","name":"L'ostéopathie crânienne soigne-t-elle les migraines ?","acceptedAnswer":{"@type":"Answer","text":"Oui, l'ostéopathie crânio-sacrée est particulièrement efficace pour les migraines et céphalées chroniques. En libérant les tensions crâniennes et en améliorant la circulation du liquide céphalo-rachidien, elle réduit la fréquence et l'intensité des crises."}},{"@type":"Question","name":"Où trouver un ostéopathe pour bébé près de Montpellier ?","acceptedAnswer":{"@type":"Answer","text":"Le Centre d'Ostéopathie du Crès, situé au 8 Place Charles de Gaulle (34920), accueille les bébés et nourrissons. Geoffrey Boyaval et Marielle Ragache sont spécialisés en ostéopathie crânienne pédiatrique. Patients de Vendargues, Jacou, Castelnau-le-Lez, Montpellier est bienvenus."}}]}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalBusiness",
+        "@id": "https://www.osteopathie-lecres.fr/#medicalbusiness",
+        "name": "Centre d'Ostéopathie du Crès",
+        "url": "https://www.osteopathie-lecres.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 Place Charles de Gaulle",
+          "addressLocality": "Le Crès",
+          "postalCode": "34920",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6395,
+          "longitude": 3.9235
+        },
+        "medicalSpecialty": "Osteopathic",
+        "priceRange": "65€",
+        "openingHoursSpecification": [
+          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"}
+        ],
+        "employee": [
+          {"@type": "Person", "name": "Geoffrey Boyaval", "jobTitle": "Ostéopathe D.O."},
+          {"@type": "Person", "name": "Marielle Ragache", "jobTitle": "Ostéopathe D.O."}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Quand emmener son bébé chez un ostéopathe au Crès ?", "acceptedAnswer": {"@type": "Answer", "text": "Consultez un ostéopathe pour votre nourrisson dès les premières semaines : après un accouchement difficile (forceps, ventouse, césarienne), en cas de plagiocéphalie (tête plate), coliques, reflux, torticolis congénital ou troubles du sommeil. Les techniques crâniennes sont très douces et adaptées dès la naissance."}},
+          {"@type": "Question", "name": "L'ostéopathie crânienne soigne-t-elle les migraines ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, l'ostéopathie crânio-sacrée est particulièrement efficace pour les migraines et céphalées chroniques. En libérant les tensions crâniennes et en améliorant la circulation du liquide céphalo-rachidien, elle réduit la fréquence et l'intensité des crises."}},
+          {"@type": "Question", "name": "Où trouver un ostéopathe pour bébé près de Montpellier ?", "acceptedAnswer": {"@type": "Answer", "text": "Le Centre d'Ostéopathie du Crès, situé au 8 Place Charles de Gaulle (34920), accueille les bébés et nourrissons. Geoffrey Boyaval et Marielle Ragache sont spécialisés en ostéopathie crânienne pédiatrique. Patients de Vendargues, Jacou, Castelnau-le-Lez, Montpellier est bienvenus."}}
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.osteopathie-lecres.fr/"},
+          {"@type": "ListItem", "position": 2, "name": "Ostéopathie Crânio-Sacrée", "item": "https://www.osteopathie-lecres.fr/osteopathie-cranio-sacree.html"}
+        ]
+      }
+    ]
+  }
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>
